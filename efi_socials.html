@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 
-<!-- Author: Shorouk Abdelaziz  https://shorouk.dev -->
-
 <html lang="en">
 
 <head>
@@ -34,7 +32,7 @@
       /* Change the icon size here */
       font-size: 2em;
       /* Change the icons colours here*/
-      color: #7a7a7a
+      color: #219EBC /*#219EBC or #023047 or #7a7a7a */
     }
 
     .facebook:hover {
@@ -46,7 +44,11 @@
     }
 
     .discord:hover {
-      color: #2AABEE;
+      color: #5865F2;
+    }
+
+    .calendar:hover {
+      color: #def2d9;
     }
 
     .email:hover {
@@ -87,6 +89,13 @@
       </div>
       <!-- End discord Icon -->
 
+      <!-- Start calendar Icon -->
+      <div id="calendar" onclick="navigate(this.id)" class="social">
+        <span class="icon calendar"><i class="fa-solid fa-calendar"></i></span>
+      </div>
+      <!-- End calendar Icon -->
+
+
       <!-- Start email Icon -->
       <div id="email" onclick="navigate(this.id)" class="social">
         <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
@@ -111,6 +120,9 @@
         }
         else if (id === "discord") {
           window.open("https://engineersforimpact.dk/discord-invite/", '_blank').focus(); //Add the url to your discord account
+        }
+        else if (id === "calendar") {
+          window.open("https://calendar.google.com/calendar/u/0/r?cid=Nzg5MmM4OWNhOTUyZTkxYzFhYTEwY2EwYWUzM2I2NzhiMGVkNjIzYzkzNjA4ODI1M2Q3YmU2NjBjODY3YzBhYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t", '_blank').focus(); //Add your calendar link
         }
         else if (id === "email") {
           window.open("mailto:contact@engineersforimpact.com", '_blank').focus(); //Add your email after "mailto:""
