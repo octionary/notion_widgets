@@ -43,6 +43,10 @@
       color: #0e76a8;
     }
 
+    .instagram:hover {
+      color: #c13584;
+    }
+
     .discord:hover {
       color: #5865F2;
     }
@@ -83,6 +87,12 @@
       </div>
       <!-- End linkedin Icon -->
 
+      <!-- Start instagram Icon -->
+      <div id="instagram" onclick="navigate(this.id)" class="social">
+        <span class="icon instagram"><i class="fab fa-instagram"></i></span>
+      </div>
+      <!-- End instagram Icon -->
+
       <!-- Start discord Icon -->
       <div id="discord" onclick="navigate(this.id)" class="social">
         <span class="icon discord"><i class="fab fa-discord"></i></span>
@@ -119,6 +129,9 @@
         }
         else if (id === "linkedin") {
           window.open("https://www.linkedin.com/company/engineersforimpact", '_blank').focus(); //Add the url to your pinterest account
+        }
+        else if (id === "instagram") {
+          window.open("https://www.instagram.com/engineers_for_impact/", '_blank').focus(); //Add the url to your pinterest account
         }
         else if (id === "discord") {
           window.open("https://engineersforimpact.dk/discord-invite", '_blank').focus(); //Add the url to your discord account
